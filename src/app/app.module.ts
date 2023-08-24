@@ -17,13 +17,15 @@ import {MatDividerModule} from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    SignupPageComponent
   ],
   imports: [
     BrowserModule,
