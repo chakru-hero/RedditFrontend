@@ -2,17 +2,17 @@
   <mat-card class="back">
     <mat-card-content >
       <div>
-      <div class="email-container">
+      <div class="username-container">
         <mat-form-field class="input-size">
           <mat-label>Enter your username</mat-label>
-          <input matInput placeholder="username" [formControl]="email" required [(ngModel)]="username">
-          <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+          <input matInput placeholder="username"  required minlength="5"  [(ngModel)]="username">
+          
         </mat-form-field>
       </div>
-      <div class="password_container" >
+      <div class="password-container" >
         <mat-form-field class="input-size">
           <mat-label>Enter your password</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+          <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password" required minlength="7">
           <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
