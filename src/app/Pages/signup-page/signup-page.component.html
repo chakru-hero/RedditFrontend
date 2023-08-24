@@ -4,7 +4,7 @@
         <div class="email-container">
           <mat-form-field class="input-size">
             <mat-label>Enter your email</mat-label>
-            <input matInput placeholder="kuldeep" [formControl]="email" required [(ngModel)]="email">
+            <input matInput placeholder="email" [formControl]="email" required minlength="5" >
             <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
@@ -25,7 +25,7 @@
           </mat-form-field>
         </div>
         <div class="signup-button-div">
-            <button
+            <button (click)="signup()"
             class="signup-button" mat-raised-button color="accent">Signup</button>
         </div>  
         </div>
