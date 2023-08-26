@@ -25,9 +25,16 @@
           </mat-form-field>
         </div>
         <div class="signup-button-div">
-            <button (click)="signup()"
-            class="signup-button" mat-raised-button color="accent">Signup</button>
-        </div>  
+          <button (click)="signup()"
+          class="signup-button" mat-raised-button color="accent">Signup</button>
+        </div> 
+        <div class="divider">
+          <hr class="hr-text" data-content="OR">
+        </div>
+         
+        <div class="login-url-container">
+          <button mat-raised-button routerLink="/login">Already a user?</button>
+        </div>
         </div>
       </mat-card-content>
     </mat-card>

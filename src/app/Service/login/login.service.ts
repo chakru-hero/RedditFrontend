@@ -2,9 +2,7 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Login } from 'src/app/models/login.model';
-
-
-const SITE_BASE_URL = 'http://localhost:8080';
+import { SITE_BASE_URL } from 'src/app/constants/constants';
 
 @Injectable({
   providedIn: 'root'

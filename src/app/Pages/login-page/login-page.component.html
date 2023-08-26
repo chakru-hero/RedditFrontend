@@ -19,12 +19,20 @@
         </mat-form-field>
       
       </div>
-        <div class="login-button-div">
+      <div class="login-button-div">
           <button
           (click)="login()"
-          class="login-button" mat-raised-button color="accent">Login</button>
-        </div>
-      </div>  
+          class="button-item" mat-raised-button color="accent">Login</button>
+      </div>
+      <div class="divider">
+        <hr class="hr-text" data-content="OR">
+      </div>
+      <div class="register-button-div">
+        <button class="button-item" 
+        mat-raised-button routerLink="/register">Create an account</button>
+      </div>
+      </div> 
+       
     </mat-card-content>
   </mat-card>
 </div>
