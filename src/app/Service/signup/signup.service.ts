@@ -14,7 +14,7 @@ export class SignupService {
 
   signupHttpService(signup:Signup):Observable<HttpResponse<any>>{
     return this.httpClient.post<HttpResponse<any>>(
-      `${SITE_BASE_URL}/user/signup`,signup,
+      `${environment.apiSpringUrl}/user/signup`,signup,
       {observe:'response'}
     )
   }
