@@ -1,4 +1,4 @@
 export const environment = {
-    production: false,
-    apiSpringUrl : 'http://localhost:8080'
+    production: true,
+    apiSpringUrl : 'https://redditfullstack-production.up.railway.app/'
 };
