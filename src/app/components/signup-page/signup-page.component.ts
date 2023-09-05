@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl,Validators,FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SignupService } from 'src/app/Service/signup/signup.service';
+import { SignupService } from 'src/app/services/signup/signup.service';
 import { Signup } from 'src/app/models/signup.model';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { SITE_BASE_URL } from 'src/app/constants/constants';
